@@ -10,18 +10,26 @@
         />
         <link rel="stylesheet" href="stylesheets/pygment_trac.css" />
         <script type="text/javascript" src="javascripts/modernizr.js">
-                        
+        																		
         </script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-                        
+        																		
         </script>
         <script type="text/javascript" src="javascripts/headsmart.min.js">
-                        
+        																		
         </script>
         <script type="text/javascript">
-                      $(document).ready(function() {
-                          $('#main_content').headsmart()
-                      })
+        	$(document).ready(function() {
+			    $('#main_content').headsmart()
+			});
+
+			var birth = Math.floor(new Date(1990, 5, 10).getTime() / 1000);
+
+
+			setInterval(function age() {
+			    var now = Math.floor(new Date().getTime() / 1000);
+			    $("#age").html(now - birth);
+			}, 50);
         </script>
         <title>
             CV by floatdrop
@@ -38,7 +46,11 @@
                             <a href="http://floatdrop.github.io/CV">Vsevolod Strukchinsky</a>
                         </h1>
                         <h2>
-                            $("#floatdrop");
+                            $("#floatdrop").age({ seconds:
+                            <span id="age">
+                                725328810
+                            </span>
+                            });
                         </h2>
                     </span>
                     <span class="left-tail">
@@ -56,9 +68,21 @@
             <span class="banner-fix">
             </span>
             <section id="main_content">
-              <h1></h1>
+                <h1>
+                </h1>
                 <p>
-                    <strong>Good day, %username%!</strong> This is short summary about me. If you want to see more detailed biography, check out my <a href="http://ru.linkedin.com/pub/%D0%B2%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B4-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%87%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9/58/598/692">linkedin</a> profile or find my in <a href="http://www.facebook.com/floatdrop">social</a> <a href="http://www.vk.com/floatdrop">networks</a> (I guess <a href="http://twitter.com/floatdrop">twitter</a> counts too).
+                    <strong>
+                        Good day, %username%!
+                    </strong>
+                    This is short summary about me. If you want to see more detailed biography,
+                    check out my
+                    <a href="http://ru.linkedin.com/pub/%D0%B2%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B4-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%87%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9/58/598/692">linkedin</a>
+                    profile or find my in
+                    <a href="http://www.facebook.com/floatdrop">social</a>
+                    <a href="http://www.vk.com/floatdrop">networks</a>
+                    (I guess
+                    <a href="http://twitter.com/floatdrop">twitter</a>
+                    counts too).
                 </p>
                 <h2>
                     <a name="education" class="anchor" href="#education"><span class="octicon octicon-link"></span></a>
@@ -71,8 +95,11 @@
                             <li>
                                 Front &mdash; HTML, JavaScript...
                             </li>
-                             <li>
-                                Back &mdash; Python, Node.js, NoSQL (Cassandra) and SQL (MySQL). Also poked Ruby with stick on <a href="https://courses.edx.org/courses/BerkeleyX/CS169.1x/2013_Spring/info">edx</a>.
+                            <li>
+                                Back &mdash; Python, Node.js, NoSQL (Cassandra) and SQL (MySQL). Also
+                                poked Ruby with stick on
+                                <a href="https://courses.edx.org/courses/BerkeleyX/CS169.1x/2013_Spring/info">edx</a>
+                                .
                             </li>
                         </ul>
                     </li>
@@ -104,7 +131,11 @@
                 <p>
                 </p>
                 <p>
-                    <strong>2011&mdash;2013</strong> I started my career as a programmer in SKB Kontur.  I wrote windows printer driver for Diadoc-Printer on C++. After that I was writing stuff on C#
+                    <strong>
+                        2011&mdash;2013
+                    </strong>
+                    I started my career as a programmer in SKB Kontur. I wrote windows printer
+                    driver for Diadoc-Printer on C++. After that I was writing stuff on C#
                     for a while and ended up writing statistic aggregation tool on Python (handwritten
                     map-reduce for Cassandra).
                 </p>
@@ -140,14 +171,14 @@
             </footer>
         </div>
         <script type="text/javascript">
-                                    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-                            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        																								var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+																								document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
         </script>
         <script type="text/javascript">
-                                    try {
-                                var pageTracker = _gat._getTracker("UA-15345174-5");
-                                pageTracker._trackPageview();
-                            } catch (err) {}
+        																								try {
+																								    var pageTracker = _gat._getTracker("UA-15345174-5");
+																								    pageTracker._trackPageview();
+																								} catch (err) {}
         </script>
     </body>
 
